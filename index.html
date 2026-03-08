@@ -26,7 +26,6 @@
         .bg-landmarkGold { background-color: #C5A059 !important; }
         .text-landmarkGold { color: #C5A059 !important; }
         .bg-darkNavy { background-color: #0B2239 !important; }
-        .border-landmarkGold { border-color: #C5A059 !important; }
         
         body { font-family: 'Inter', sans-serif; margin: 0; padding: 0; line-height: 1.6; }
         
@@ -52,6 +51,18 @@
         .footer-ul-1 { list-style: none; padding: 0; margin: 0; }
         .footer-ul-1 li { display: flex; align-items: center; margin-bottom: 12px; gap: 12px; }
         .footer-ul-1 img { width: 28px; height: 28px; object-fit: contain; }
+
+        .input-friendly {
+            width: 100%;
+            border-bottom: 3px solid #f1f5f9;
+            padding: 1rem 0;
+            outline: none;
+            transition: border-color 0.3s;
+            background: transparent;
+        }
+        .input-friendly:focus {
+            border-color: #45AFE5;
+        }
     </style>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -65,31 +76,27 @@
                 <span><i class="fas fa-envelope text-landmarkBlue mr-2"></i> info@landmarkcredit.com</span>
                 <span><i class="fas fa-phone text-landmarkBlue mr-2"></i> +1 (800) 905-5263</span>
             </div>
-            <div class="hidden md:block italic">Texas Based • Serving Nationwide</div>
+            <div class="hidden md:block italic tracking-tight">Texas Based • Serving Nationwide</div>
         </div>
     </div>
 
     <nav class="bg-black sticky top-0 z-50 py-4 px-6 shadow-lg border-b-2 border-landmarkGold">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <a href="#">
-                <img src="https://raw.githubusercontent.com/verbatim37/landmarkcredit/8e380b1f12746aad027fe87b89d1f294bcade9ce/assets/Landmark-credit-Logo.png" alt="Landmark Credit" class="h-12 md:h-16">
+                <img src="https://raw.githubusercontent.com/verbatim37/landmarkcredit/8e380b1f12746aad027fe87b89d1f294bcade9ce/assets/Landmark-credit-Logo.png" alt="Landmark Credit" class="h-10 md:h-16">
             </a>
-            <div class="hidden lg:flex gap-10 text-xs font-black uppercase text-white tracking-widest">
+            <div class="hidden lg:flex gap-10 text-[10px] font-black uppercase text-white tracking-[0.2em]">
+                <a href="#results" class="hover:text-landmarkGold transition-colors">Client Results</a>
                 <a href="#services" class="hover:text-landmarkGold transition-colors">Services</a>
-                <a href="#how-it-works" class="hover:text-landmarkGold transition-colors">Program</a>
-                <a href="#testimonials" class="hover:text-landmarkGold transition-colors">Results</a>
                 <a href="#about" class="hover:text-landmarkGold transition-colors">About</a>
                 <a href="#faq" class="hover:text-landmarkGold transition-colors">FAQ</a>
             </div>
-            <a href="#lead-form" class="btn-main px-8 py-3 rounded-lg text-xs tracking-wider shadow-md border border-white/10">Free Consultation</a>
+            <a href="#lead-form" class="btn-main px-8 py-3 rounded-lg text-xs tracking-wider border border-white/10 shadow-md">Free Consultation</a>
         </div>
     </nav>
 
     <header class="bg-landmarkBlue text-white py-24 md:py-36 px-4 text-center border-b-8 border-landmarkGold">
         <div class="max-w-5xl mx-auto">
-            <div class="inline-block bg-white/20 px-6 py-1.5 rounded-full text-xs font-black mb-8 uppercase tracking-[0.2em]">
-                <i class="fab fa-facebook mr-2"></i> 18k+ Followers
-            </div>
             <h1 class="text-4xl md:text-7xl font-extrabold mb-8 leading-tight tracking-tight">Tired of Credit Reports Negatively Affecting Your Life?</h1>
             <p class="text-2xl md:text-4xl text-yellow-300 font-extrabold uppercase italic mb-12 drop-shadow-lg">Stop Harassing Phone Calls!</p>
             <p class="text-lg md:text-2xl font-medium max-w-4xl mx-auto opacity-95 italic mb-12">"We use consumer laws to exercise your legal rights against Debt Collectors, Experian, Trans Union & Equifax!"</p>
@@ -97,92 +104,130 @@
         </div>
     </header>
 
-    <section class="py-12 bg-slate-50 border-b border-slate-200">
-        <div class="max-w-7xl mx-auto px-6 text-center">
-            <h4 class="text-[10px] font-black uppercase text-slate-400 tracking-[0.4em] mb-10 italic">As Featured On The Radio</h4>
-            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-8 items-center opacity-60 grayscale hover:grayscale-0 transition-all">
-                <img src="https://raw.githubusercontent.com/verbatim37/landmarkcredit/main/assets/news_organizations%20(1).png" alt="Radio" class="h-10 mx-auto object-contain">
-                <img src="https://raw.githubusercontent.com/verbatim37/landmarkcredit/main/assets/news_organizations%20(2).png" alt="Radio" class="h-10 mx-auto object-contain">
-                <img src="https://raw.githubusercontent.com/verbatim37/landmarkcredit/main/assets/news_organizations%20(3).png" alt="Radio" class="h-10 mx-auto object-contain">
-                <img src="https://raw.githubusercontent.com/verbatim37/landmarkcredit/main/assets/news_organizations%20(4).png" alt="Radio" class="h-10 mx-auto object-contain">
-                <img src="https://raw.githubusercontent.com/verbatim37/landmarkcredit/main/assets/news_organizations%20(5).png" alt="Radio" class="h-10 mx-auto object-contain">
-                <img src="https://raw.githubusercontent.com/verbatim37/landmarkcredit/main/assets/news_organizations%20(6).png" alt="Radio" class="h-10 mx-auto object-contain">
-                <img src="https://raw.githubusercontent.com/verbatim37/landmarkcredit/main/assets/news_organizations%20(7).png" alt="Radio" class="h-10 mx-auto object-contain">
-            </div>
-        </div>
-    </section>
-
-    <section id="services" class="py-24 px-6 bg-white">
-        <div class="max-w-7xl mx-auto">
+    <section id="results" class="py-24 bg-darkNavy text-white">
+        <div class="max-w-6xl mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-5xl font-extrabold text-darkNavy uppercase mb-4 tracking-tighter">The Landmark Program</h2>
-                <p class="text-landmarkGold font-black uppercase tracking-[0.3em] text-sm md:text-base italic">Four Pillars of Success</p>
+                <h2 class="text-3xl md:text-5xl font-extrabold uppercase tracking-tighter mb-4">Proven Results for Real People</h2>
+                <p class="text-landmarkGold font-black uppercase tracking-[0.3em] text-sm italic">Witness the Landmark Difference</p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="bg-slate-50 p-10 rounded-3xl shadow-md border border-slate-100 hover:border-landmarkGold transition-all">
-                    <h3 class="text-xl font-bold mb-6 text-landmarkBlue uppercase text-center border-b-2 border-landmarkGold/30 pb-4">Credit Repair</h3>
-                    <p class="text-base text-slate-600 leading-relaxed">With over 300 rules governing credit bureaus, you need an expert at your side to place the burden back on agencies.</p>
+            
+            <div id="testimonial-container" class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="bg-white/5 p-8 rounded-3xl border border-white/10 hover:border-landmarkGold transition-all">
+                    <div class="text-yellow-400 mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-lg md:text-xl italic mb-6 leading-relaxed">"Landmark was the best choice I made! Within 30 days, half of my 60 medical reports were removed. A year later, I have zero negative reportings and finally purchased my first home!"</p>
+                    <h5 class="text-landmarkGold font-black uppercase text-sm tracking-widest">— Johnna Blalock Woodall</h5>
                 </div>
-                <div class="bg-slate-50 p-10 rounded-3xl shadow-md border border-slate-100 hover:border-landmarkGold transition-all">
-                    <h3 class="text-xl font-bold mb-6 text-landmarkBlue uppercase text-center border-b-2 border-landmarkGold/30 pb-4">Debt Settlement</h3>
-                    <p class="text-base text-slate-600 leading-relaxed">We guide you through the process so paying off old debts doesn't drop your score right before closing a loan.</p>
+
+                <div class="bg-white/5 p-8 rounded-3xl border border-white/10 hover:border-landmarkGold transition-all">
+                    <div class="text-yellow-400 mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-lg md:text-xl italic mb-6 leading-relaxed">"We went from a score in the mid 600's to almost an 800 because of their diligence. Because of this, my wife and I received the financing to build our own business!"</p>
+                    <h5 class="text-landmarkGold font-black uppercase text-sm tracking-widest">— Richard Hirst</h5>
                 </div>
-                <div class="bg-slate-50 p-10 rounded-3xl shadow-md border border-slate-100 hover:border-landmarkGold transition-all">
-                    <h3 class="text-xl font-bold mb-6 text-landmarkBlue uppercase text-center border-b-2 border-landmarkGold/30 pb-4">Consulting</h3>
-                    <p class="text-base text-slate-600 leading-relaxed">Identifying FCRA and FDCPA violations for legal review to force bureaus to provide results.</p>
-                </div>
-                <div class="bg-slate-50 p-10 rounded-3xl shadow-md border border-slate-100 hover:border-landmarkGold transition-all">
-                    <h3 class="text-xl font-bold mb-6 text-landmarkBlue uppercase text-center border-b-2 border-landmarkGold/30 pb-4">Building Credit</h3>
-                    <p class="text-base text-slate-600 leading-relaxed">Learn secret strategies developed by our team that allow our clients to build positive credit fast.</p>
+
+                <div class="bg-white/5 p-8 rounded-3xl border border-white/10 hover:border-landmarkGold transition-all">
+                    <div class="text-yellow-400 mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-lg md:text-xl italic mb-6 leading-relaxed">"Landmark delivers what they promise. If you stay in the process this program works! My credit score has gone up from low 500's to high 700's."</p>
+                    <h5 class="text-landmarkGold font-black uppercase text-sm tracking-widest">— Chris Bower</h5>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="how-it-works" class="py-24 px-6 bg-landmarkBlue text-white">
-        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            <div>
-                <h2 class="text-4xl md:text-6xl font-extrabold mb-8 uppercase italic tracking-tighter">Our Guarantee</h2>
-                <div class="bg-white/10 p-8 border-l-8 border-white rounded-r-2xl mb-12 shadow-lg">
-                    <p class="text-2xl md:text-3xl leading-snug italic font-medium">"If you do your part and don’t see results within the first 6 months, we refund 100% of your money".</p>
-                </div>
-                <div class="space-y-8 text-lg">
-                    <div class="flex gap-6"><i class="fas fa-check-circle text-landmarkGold text-3xl"></i><p><strong>Goal Assessment:</strong> For buying a house, car, or building credit.</p></div>
-                    <div class="flex gap-6"><i class="fas fa-check-circle text-landmarkGold text-3xl"></i><p><strong>Educational Services:</strong> Programs tailored specifically for your needs.</p></div>
-                    <div class="flex gap-6"><i class="fas fa-check-circle text-landmarkGold text-3xl"></i><p><strong>Affordable Plans:</strong> Monthly payment plans that fit your budget.</p></div>
-                </div>
+    <section id="lead-form" class="py-24 px-4 bg-slate-50 border-y border-slate-200">
+        <div class="max-w-4xl mx-auto bg-white rounded-[40px] shadow-2xl overflow-hidden border border-slate-100">
+            <div class="bg-landmarkBlue py-12 text-center text-white">
+                <h2 class="text-3xl md:text-5xl font-extrabold uppercase tracking-tighter mb-4">Take the First Step</h2>
+                <p class="text-lg font-black uppercase tracking-[0.1em] italic">100% Confidential • No Cost • No Obligation</p>
             </div>
-            <div class="bg-white p-2 rounded-[40px] shadow-2xl transform md:rotate-1">
-                <div class="bg-red-600 text-white p-12 rounded-[30px] border-l-[12px] border-darkNavy text-center">
-                    <h3 class="text-2xl font-black mb-6 uppercase tracking-widest">Sham Investigations</h3>
-                    <p class="text-lg md:text-xl leading-relaxed mb-10 font-bold">Bureaus are conducting <strong>Sham Investigations</strong> according to the Jan 7, 2026 CFPB lawsuit!</p>
-                    <button onclick="toggleModal()" class="w-full bg-white text-red-600 font-black py-4 rounded-full text-lg uppercase tracking-wider hover:bg-slate-100 transition-all">Read Lawsuit Details →</button>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="testimonials" class="py-24 bg-darkNavy text-white">
-        <div class="max-w-4xl mx-auto px-6 relative text-center">
-            <h2 class="text-4xl md:text-5xl font-extrabold mb-16 uppercase tracking-tighter">Client Success</h2>
-            <div id="testimonial-container" class="min-h-[250px] flex items-center justify-center">
-                <div class="testimonial-slide active">
-                    <p class="text-xl md:text-3xl italic mb-10 leading-relaxed">"In 30 days, half of my 60 medical reports were removed. I finally purchased my first home!"</p>
-                    <h5 class="text-landmarkGold font-black uppercase text-base tracking-[0.3em]">— Johnna Blalock Woodall</h5>
+            <form action="https://formspree.io/f/info@resmypc.com" method="POST" class="p-8 md:p-16 space-y-12">
+                
+                <div class="space-y-8">
+                    <h4 class="text-landmarkBlue font-black uppercase text-sm tracking-widest border-b pb-2">Your Contact Information</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <label class="text-xs font-bold uppercase text-slate-400 tracking-widest">Full Name</label>
+                            <input type="text" name="name" placeholder="John Doe" required class="input-friendly text-lg">
+                        </div>
+                        <div>
+                            <label class="text-xs font-bold uppercase text-slate-400 tracking-widest">Email</label>
+                            <input type="email" name="email" placeholder="john@example.com" required class="input-friendly text-lg">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <label class="text-xs font-bold uppercase text-slate-400 tracking-widest">Phone Number</label>
+                            <input type="tel" name="phone" placeholder="(555) 555-5555" required class="input-friendly text-lg">
+                        </div>
+                        <div>
+                            <label class="text-xs font-bold uppercase text-slate-400 tracking-widest">State</label>
+                            <input type="text" name="state" placeholder="Texas" required class="input-friendly text-lg">
+                        </div>
+                    </div>
                 </div>
-                <div class="testimonial-slide">
-                    <p class="text-xl md:text-3xl italic mb-10 leading-relaxed">"We went from mid 600's to almost an 800 and received financing for our own business!"</p>
-                    <h5 class="text-landmarkGold font-black uppercase text-base tracking-[0.3em]">— Richard Hirst</h5>
+
+                <div class="space-y-8">
+                    <h4 class="text-landmarkBlue font-black uppercase text-sm tracking-widest border-b pb-2">Your Credit Health</h4>
+                    <div>
+                        <label class="text-xs font-bold uppercase text-slate-400 tracking-widest block mb-4">Credit Score Range</label>
+                        <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                            <label class="flex items-center gap-2 cursor-pointer border rounded-lg p-3 hover:bg-slate-50"><input type="radio" name="score" value="Below 500" class="accent-landmarkBlue"><span class="text-sm">Below 500</span></label>
+                            <label class="flex items-center gap-2 cursor-pointer border rounded-lg p-3 hover:bg-slate-50"><input type="radio" name="score" value="500-599" class="accent-landmarkBlue"><span class="text-sm">500-599</span></label>
+                            <label class="flex items-center gap-2 cursor-pointer border rounded-lg p-3 hover:bg-slate-50"><input type="radio" name="score" value="600-699" class="accent-landmarkBlue"><span class="text-sm">600-699</span></label>
+                            <label class="flex items-center gap-2 cursor-pointer border rounded-lg p-3 hover:bg-slate-50"><input type="radio" name="score" value="700+" class="accent-landmarkBlue"><span class="text-sm">700+</span></label>
+                            <label class="flex items-center gap-2 cursor-pointer border rounded-lg p-3 hover:bg-slate-50"><input type="radio" name="score" value="Not sure" class="accent-landmarkBlue"><span class="text-sm">Not sure</span></label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="text-xs font-bold uppercase text-slate-400 tracking-widest block mb-2">Most pressing credit challenge right now?</label>
+                        <textarea name="challenge" rows="2" placeholder="e.g. Medical debt, collections, or inaccuracies" class="input-friendly text-lg italic"></textarea>
+                    </div>
                 </div>
-                <div class="testimonial-slide">
-                    <p class="text-xl md:text-3xl italic mb-10 leading-relaxed">"Landmark delivers what they promise. Score went from low 500's to high 700's!"</p>
-                    <h5 class="text-landmarkGold font-black uppercase text-base tracking-[0.3em]">— Chris Bower</h5>
+
+                <div class="space-y-8">
+                    <h4 class="text-landmarkBlue font-black uppercase text-sm tracking-widest border-b pb-2">Commitment & Goals</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <label class="text-xs font-bold uppercase text-slate-400 tracking-widest block mb-4">Ready for legal action?</label>
+                            <select name="legal_ready" class="w-full bg-slate-100 p-4 rounded-xl outline-none text-sm font-bold">
+                                <option>Yes</option>
+                                <option>No</option>
+                                <option>Not sure, need more info</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="text-xs font-bold uppercase text-slate-400 tracking-widest block mb-4">Investment Capacity</label>
+                            <select name="investment" class="w-full bg-slate-100 p-4 rounded-xl outline-none text-sm font-bold">
+                                <option>Ready to invest $1000</option>
+                                <option>$500</option>
+                                <option>Only $200 or less</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <label class="text-xs font-bold uppercase text-slate-400 tracking-widest block mb-4">Timeline for Improvement</label>
+                            <select name="timeline" class="w-full bg-slate-100 p-4 rounded-xl outline-none text-sm font-bold">
+                                <option>ASAP</option>
+                                <option>Start within 30 days</option>
+                                <option>1-3 months</option>
+                                <option>3 or more</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="text-xs font-bold uppercase text-slate-400 tracking-widest block mb-2">Primary motivation?</label>
+                            <input type="text" name="reason" placeholder="e.g. Buying a home or business loan" class="input-friendly text-lg">
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="flex justify-center gap-10 mt-16">
-                <button onclick="changeSlide(-1)" class="w-16 h-16 rounded-full border-2 border-white/20 hover:bg-landmarkBlue transition-all text-2xl"><i class="fas fa-chevron-left"></i></button>
-                <button onclick="changeSlide(1)" class="w-16 h-16 rounded-full border-2 border-white/20 hover:bg-landmarkBlue transition-all text-2xl"><i class="fas fa-chevron-right"></i></button>
-            </div>
+
+                <div class="pt-8">
+                    <button type="submit" class="w-full btn-main py-6 rounded-full text-xl md:text-2xl shadow-xl">Start My Free Consultation</button>
+                    <p class="text-center text-xs text-slate-400 mt-6 italic">Submit to have our team contact reach out for your 100% confidential. No Cost, No obligation consultation!</p>
+                </div>
+            </form>
         </div>
     </section>
 
@@ -192,132 +237,40 @@
         </div>
         <div class="md:w-2/3">
             <h2 class="text-4xl md:text-5xl font-extrabold text-landmarkBlue uppercase mb-4 tracking-tighter">Bradley Young</h2>
-            <p class="text-landmarkGold font-black uppercase text-sm mb-8 tracking-[0.3em] italic">CEO & Founder</p>
+            <p class="text-landmarkGold font-black uppercase text-sm mb-8 tracking-[0.3em] italic">CEO & Founder since 2000</p>
             <p class="text-xl md:text-2xl text-slate-700 leading-relaxed italic mb-8 border-l-4 border-landmarkGold pl-8 font-medium">"We treat every customer as family with Love, Respect and Patience."</p>
-            <p class="text-lg text-slate-500 leading-relaxed">Bradley Young founded Landmark Credit Services in 2000 to offer a higher standard of advocacy and transparent results.</p>
+            <p class="text-lg text-slate-500 leading-relaxed">Bradley Young founded Landmark Credit Services in 2000 to provide professional credit restoration and legal advocacy for families nationwide.</p>
         </div>
     </section>
 
-    <section id="faq" class="py-24 px-6 bg-slate-50 border-y border-slate-200">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl md:text-5xl font-extrabold text-center mb-20 uppercase text-darkNavy tracking-tighter">FAQ</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-                <div class="bg-white p-10 rounded-[40px] shadow-md border border-slate-100">
-                    <h4 class="font-black text-landmarkBlue mb-6 uppercase text-lg">Is it Free?</h4>
-                    <p class="text-sm md:text-base text-slate-500">Your first strategy call is 100% free and no obligation.</p>
-                </div>
-                <div class="bg-white p-10 rounded-[40px] shadow-md border border-slate-100">
-                    <h4 class="font-black text-landmarkBlue mb-6 uppercase text-lg">How Fast?</h4>
-                    <p class="text-sm md:text-base text-slate-500">Many see harassment stop right away. Restoration moves fast.</p>
-                </div>
-                <div class="bg-white p-10 rounded-[40px] shadow-md border border-slate-100">
-                    <h4 class="font-black text-landmarkBlue mb-6 uppercase text-lg">Legal?</h4>
-                    <p class="text-sm md:text-base text-slate-500">Yes! We fight using federal consumer laws to force compliance.</p>
-                </div>
-                <div class="bg-white p-10 rounded-[40px] shadow-md border border-slate-100">
-                    <h4 class="font-black text-landmarkBlue mb-6 uppercase text-lg">Hurt Credit?</h4>
-                    <p class="text-sm md:text-base text-slate-500">No. Our mission is pure restoration, not damaging your credit.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="lead-form" class="py-24 px-4 bg-white">
-        <div class="max-w-4xl mx-auto bg-white rounded-[60px] shadow-2xl overflow-hidden border-2 border-slate-100">
-            <div class="bg-landmarkBlue py-12 text-center text-white">
-                <h2 class="text-3xl md:text-5xl font-extrabold uppercase tracking-tighter underline decoration-white decoration-4 underline-offset-[10px]">Free Consultation</h2>
-                <p class="text-lg md:text-xl mt-6 opacity-100 font-black uppercase tracking-[0.2em] italic">100% Confidential • Secure • No Cost</p>
-            </div>
-            
-            
-
-[Image of credit score ranges]
-
-
-            <form action="https://formspree.io/f/info@resmypc.com" method="POST" class="p-10 md:p-20 space-y-10">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                    <div>
-                        <label class="block text-xs font-black uppercase text-slate-400 mb-4 tracking-widest">Full Name</label>
-                        <input type="text" name="name" required class="w-full border-b-[4px] border-slate-100 p-4 outline-none focus:border-landmarkBlue text-xl font-medium">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-black uppercase text-slate-400 mb-4 tracking-widest">Email Address</label>
-                        <input type="email" name="email" required class="w-full border-b-[4px] border-slate-100 p-4 outline-none focus:border-landmarkBlue text-xl font-medium">
-                    </div>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                    <div>
-                        <label class="block text-xs font-black uppercase text-slate-400 mb-4 tracking-widest">Phone Number</label>
-                        <input type="tel" name="phone" required class="w-full border-b-[4px] border-slate-100 p-4 outline-none focus:border-landmarkBlue text-xl font-medium">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-black uppercase text-slate-400 mb-4 tracking-widest">Your State</label>
-                        <input type="text" name="state" required class="w-full border-b-[4px] border-slate-100 p-4 outline-none focus:border-landmarkBlue text-xl font-medium">
-                    </div>
-                </div>
-                <div>
-                    <label class="block text-xs font-black uppercase text-slate-400 mb-4 tracking-widest">Main reason for improving credit?</label>
-                    <textarea name="challenge" rows="3" class="w-full border-2 border-slate-100 rounded-[20px] p-6 outline-none focus:border-landmarkBlue text-lg"></textarea>
-                </div>
-                <button type="submit" class="w-full btn-main py-6 rounded-full text-xl md:text-2xl shadow-xl">Submit My Request</button>
-            </form>
-        </div>
-    </section>
-
-    <footer class="bg-black py-24 px-6 text-slate-400 border-t-[10px] border-landmarkGold">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-20">
+    <footer class="bg-black py-20 px-6 text-slate-400 border-t-[10px] border-landmarkGold">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16">
             <div>
-                <h4 class="font-black text-white mb-10 uppercase text-lg tracking-[0.3em] underline decoration-landmarkGold decoration-4 underline-offset-[12px]">Contact Us</h4>
+                <h4 class="font-black text-white mb-8 uppercase text-lg tracking-[0.3em] underline decoration-landmarkGold decoration-4 underline-offset-[12px]">Contact Us</h4>
                 <div class="text-lg md:text-xl space-y-4 mb-12 font-medium">
-                    <p class="font-black text-landmarkBlue">Landmark Credit Repair</p>
+                    <p class="font-black text-landmarkBlue uppercase tracking-tighter">Landmark Credit Repair</p>
                     <p>info@landmarkcredit.com</p>
                     <p>+1 (800) 905-5263</p>
                 </div>
                 <a href="https://www.bbb.org/us/tx/tyler/profile/credit-repair-no-advanced-fee/landmark-credit-repair-1075-28036223/#sealclick" target="_blank" rel="nofollow">
-                    <img decoding="async" src="https://seal-easttexas.bbb.org/seals/blue-seal-200-42-whitetxt-bbb-28036223.png" alt="BBB Seal" class="h-20 hover:scale-105 transition-transform">
+                    <img decoding="async" src="https://seal-easttexas.bbb.org/seals/blue-seal-200-42-whitetxt-bbb-28036223.png" alt="BBB Seal" class="h-16 hover:scale-105 transition-transform">
                 </a>
             </div>
             <div>
-                <h4 class="font-black text-white mb-10 uppercase text-lg tracking-[0.3em] underline decoration-landmarkGold decoration-4 underline-offset-[12px]">Social Connect</h4>
-                <ul class="footer-ul-1 text-lg font-black">
-                    <li><img src="https://landmarkcreditrepair.com/wp-content/uploads/2021/08/fb-icon-01.png" alt="FB"><a href="https://www.facebook.com/landmarkcreditrepairttyler" target="_blank" class="hover:text-landmarkBlue transition-colors tracking-widest uppercase text-sm">Facebook</a></li>
-                    <li><img src="https://landmarkcreditrepair.com/wp-content/uploads/2021/08/twitter-icon-01.png" alt="TW"><a href="https://twitter.com/takeovercoach?lang=en" target="_blank" class="hover:text-landmarkBlue transition-colors tracking-widest uppercase text-sm">Twitter</a></li>
-                    <li><img src="https://landmarkcreditrepair.com/wp-content/uploads/2021/08/linkedin-icon-01.png" alt="LI"><a href="https://www.linkedin.com/company/landmark-credit-repair" target="_blank" class="hover:text-landmarkBlue transition-colors tracking-widest uppercase text-sm">LinkedIn</a></li>
+                <h4 class="font-black text-white mb-8 uppercase text-lg tracking-[0.3em] underline decoration-landmarkGold decoration-4 underline-offset-[12px]">Social Connect</h4>
+                <ul class="footer-ul-1 text-sm font-bold uppercase tracking-widest">
+                    <li><img src="https://landmarkcreditrepair.com/wp-content/uploads/2021/08/fb-icon-01.png" alt="FB"><a href="https://www.facebook.com/landmarkcreditrepairttyler" target="_blank" class="hover:text-landmarkBlue transition-colors">Facebook</a></li>
+                    <li><img src="https://landmarkcreditrepair.com/wp-content/uploads/2021/08/twitter-icon-01.png" alt="TW"><a href="https://twitter.com/takeovercoach?lang=en" target="_blank" class="hover:text-landmarkBlue transition-colors">Twitter</a></li>
+                    <li><img src="https://landmarkcreditrepair.com/wp-content/uploads/2021/08/linkedin-icon-01.png" alt="LI"><a href="https://www.linkedin.com/company/landmark-credit-repair" target="_blank" class="hover:text-landmarkBlue transition-colors">LinkedIn</a></li>
                 </ul>
             </div>
-            <div class="text-[10px] md:text-xs uppercase font-black leading-relaxed space-y-12">
-                <p class="text-white underline tracking-[0.4em] decoration-landmarkGold underline-offset-2">Ring Central Compliance</p>
-                <p class="font-normal normal-case text-slate-500 italic text-base border-l-2 border-slate-800 pl-6">By providing your phone number, you agree to receive text messages regarding your inquiry. Reply STOP to cancel.</p>
-                <p class="text-landmarkGold tracking-[0.4em] pt-10 border-t border-slate-900 text-xs">© 2026 LANDMARK CREDIT REPAIR. ALL RIGHTS RESERVED.</p>
+            <div class="text-[10px] md:text-xs uppercase font-black leading-relaxed space-y-8">
+                <p class="text-white underline tracking-[0.4em] decoration-landmarkGold underline-offset-2">Compliance Information</p>
+                <p class="font-normal normal-case text-slate-500 italic text-base border-l-2 border-slate-800 pl-6">By providing your phone number, you agree to receive text messages regarding your inquiry. Message/data rates may apply. Reply STOP to opt out.</p>
+                <p class="text-landmarkGold tracking-[0.4em] pt-10 border-t border-slate-900">© 2026 LANDMARK CREDIT REPAIR. ALL RIGHTS RESERVED.</p>
             </div>
         </div>
     </footer>
-
-    <div id="lawsuitModal" class="fixed inset-0 z-[100] hidden overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-        <div class="fixed inset-0 bg-slate-900 bg-opacity-90 backdrop-blur-lg" onclick="toggleModal()"></div>
-        <div class="flex min-h-full items-center justify-center p-6">
-            <div class="relative bg-white rounded-[50px] shadow-2xl w-full max-w-2xl border-t-[12px] border-red-600 p-16 text-center">
-                <h4 class="text-3xl font-black text-slate-900 mb-8 uppercase tracking-tighter">CFPB Lawsuit Facts</h4>
-                <p class="text-xl text-slate-600 leading-relaxed mb-12 italic font-medium">Bureaus conducted "sham" investigations that ignore consumer evidence.</p>
-                <button onclick="toggleModal()" class="btn-main px-12 py-3 rounded-full text-lg shadow-xl">Return to Safety</button>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.testimonial-slide');
-        function changeSlide(direction) {
-            slides[currentSlide].classList.remove('active');
-            currentSlide = (currentSlide + direction + slides.length) % slides.length;
-            slides[currentSlide].classList.add('active');
-        }
-        function toggleModal() {
-            const modal = document.getElementById('lawsuitModal');
-            modal.classList.toggle('hidden');
-            document.body.style.overflow = modal.classList.contains('hidden') ? 'auto' : 'hidden';
-        }
-    </script>
 
 </body>
 </html>
