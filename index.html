@@ -56,13 +56,12 @@
             background: transparent;
         }
         .input-friendly:focus { border-color: #45AFE5; }
-        .input-error { border-color: #ef4444 !important; }
 
         .video-wrapper iframe {
             width: 100% !important;
             height: auto !important;
             aspect-ratio: 16 / 9;
-            border-radius: 1rem;
+            border-radius: 1.5rem;
             box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.3);
         }
     </style>
@@ -90,21 +89,24 @@
         <div class="max-w-5xl mx-auto">
             <h1 class="text-4xl md:text-7xl font-extrabold mb-8 leading-tight tracking-tight">Tired of Credit Reports Negatively Affecting Your Life?</h1>
             <p class="text-2xl md:text-4xl text-yellow-300 font-extrabold uppercase italic mb-12 drop-shadow-lg">Stop Harassing Phone Calls!</p>
-            <p class="text-lg md:text-xl font-medium max-w-4xl mx-auto opacity-95 italic mb-12">"We use consumer laws to exercise your legal rights against Debt Collectors, Experian, Trans Union & Equifax!"</p>
+            <p class="text-lg md:text-xl font-medium max-w-4xl mx-auto opacity-95 italic mb-12 leading-relaxed">"We use consumer laws to exercise your legal rights against Debt Collectors, Experian, Trans Union & Equifax!"</p>
             <a href="#lead-form" class="btn-main px-14 py-6 rounded-full text-xl md:text-2xl shadow-xl">Schedule Free Credit Advocate Call</a>
         </div>
     </header>
 
-    <section class="py-16 px-6 bg-slate-50 border-b border-slate-200">
-        <div class="max-w-4xl mx-auto text-center">
+    <section class="py-16 px-6 bg-slate-50 border-b border-slate-200 text-center">
+        <div class="max-w-4xl mx-auto">
             <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-200">
                 <div class="bg-red-600 px-6 py-2 flex items-center justify-between">
                     <span class="text-[10px] font-black text-white uppercase tracking-[0.3em]">Official Consumer Alert</span>
-                    <span class="text-[10px] font-black text-white/80 uppercase tracking-widest italic">Jan 7, 2026 Update</span>
+                    <span class="text-[10px] font-black text-white/80 uppercase tracking-widest italic font-bold">Jan 7, 2026 Update</span>
                 </div>
                 <div class="p-8 md:p-12 space-y-6">
                     <p class="text-lg md:text-xl text-slate-700 leading-relaxed font-medium">
-                        For 20 years we have realized dispute letters aren't enough! Bureaus conduct <strong>"Sham Investigations"</strong> per the Jan 2026 CFPB lawsuit.
+                        Over the last 20 years, we have come to realize that <strong>just sending out dispute letters isn’t going to get the job done!</strong>
+                    </p>
+                    <p class="text-base text-slate-600 leading-relaxed">
+                        In fact, Credit Bureaus such as Experian receive thousands of disputes a day and conduct <strong>Sham Investigations</strong> according to Jan 7th 2026 CFPB lawsuit!
                     </p>
                     <div class="bg-slate-50 p-6 rounded-2xl border-l-4 border-landmarkBlue">
                         <p class="text-xl md:text-2xl font-black text-darkNavy tracking-tight uppercase leading-tight">
@@ -134,6 +136,27 @@
         </div>
     </section>
 
+    <section id="services" class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl md:text-5xl font-extrabold text-darkNavy uppercase mb-4 tracking-tighter">The Landmark Program</h2>
+            <p class="text-landmarkGold font-black uppercase tracking-[0.3em] text-sm italic mb-16">Professional Restoration through Legal Advocacy</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="bg-slate-50 p-10 rounded-[30px] border border-slate-100 shadow-md">
+                    <h4 class="text-xl font-black mb-4 text-landmarkBlue uppercase border-b-2 border-landmarkGold/20 pb-2">Credit Experts</h4>
+                    <p class="text-sm text-slate-600">With over 300 rules governing credit bureaus, you need an expert at your side to place the burden back on agencies.</p>
+                </div>
+                <div class="bg-slate-50 p-10 rounded-[30px] border border-slate-100 shadow-md">
+                    <h4 class="text-xl font-black mb-4 text-landmarkBlue uppercase border-b-2 border-landmarkGold/20 pb-2">Debt Settlement</h4>
+                    <p class="text-sm text-slate-600">Paying old debts incorrectly can drop scores by 80 points. We guide your settlement to protect your closing ability.</p>
+                </div>
+                <div class="bg-slate-50 p-10 rounded-[30px] border border-slate-100 shadow-md">
+                    <h4 class="text-xl font-black mb-4 text-landmarkBlue uppercase border-b-2 border-landmarkGold/20 pb-2">Consulting</h4>
+                    <p class="text-sm text-slate-600">Identifying FCRA and FDCPA violations for legal review to force bureaus to provide results through federal law.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="lead-form" class="py-24 px-4 bg-slate-100 border-y border-slate-200">
         <div class="max-w-4xl mx-auto bg-white rounded-[40px] shadow-2xl overflow-hidden border border-slate-200">
             <div class="bg-landmarkBlue py-12 text-center text-white px-6">
@@ -141,70 +164,76 @@
                 <p class="text-lg font-black uppercase tracking-[0.1em] italic">100% Confidential • Secure • Expert Consultation</p>
             </div>
 
-            <form id="landmarkForm" action="https://formspree.io/f/info@resmypc.com" method="POST" class="p-8 md:p-16 space-y-12">
+            <form id="landmarkForm" action="https://formspree.io/f/mvzwzgwk" method="POST" class="p-8 md:p-16 space-y-12">
                 
                 <div class="space-y-8">
-                    <h4 class="text-landmarkBlue font-black uppercase text-sm tracking-widest border-b pb-2">Your Contact Information</h4>
+                    <h4 class="text-landmarkBlue font-black uppercase text-sm tracking-widest border-b pb-2">1. Contact Information</h4>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div>
                             <label class="text-[10px] font-black text-slate-400 uppercase tracking-widest">Full Name</label>
-                            <input type="text" name="full_name" id="full_name" placeholder="John Doe" required minlength="3" class="input-friendly text-lg">
+                            <input type="text" name="Full Name" required minlength="3" placeholder="First & Last Name" class="input-friendly text-lg">
                         </div>
                         <div>
                             <label class="text-[10px] font-black text-slate-400 uppercase tracking-widest">Email Address</label>
-                            <input type="email" name="email" id="email" placeholder="john@example.com" required class="input-friendly text-lg">
+                            <input type="email" name="Email" required placeholder="name@email.com" class="input-friendly text-lg">
                         </div>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div>
                             <label class="text-[10px] font-black text-slate-400 uppercase tracking-widest">Phone Number</label>
-                            <input type="tel" name="phone" id="phone" placeholder="555-555-5555" required pattern="[0-9\- \(\)\+]{10,}" title="Please enter a valid phone number" class="input-friendly text-lg">
+                            <input type="tel" name="Phone" required pattern="[0-9\- \(\)\+]{10,}" placeholder="555-555-5555" class="input-friendly text-lg">
                         </div>
                         <div>
                             <label class="text-[10px] font-black text-slate-400 uppercase tracking-widest">Your State</label>
-                            <input type="text" name="state" id="state" placeholder="TX" required class="input-friendly text-lg">
+                            <input type="text" name="State" required placeholder="e.g. TX" class="input-friendly text-lg">
                         </div>
                     </div>
                 </div>
 
                 <div class="space-y-8">
-                    <h4 class="text-landmarkBlue font-black uppercase text-sm tracking-widest border-b pb-2">Credit Profile</h4>
+                    <h4 class="text-landmarkBlue font-black uppercase text-sm tracking-widest border-b pb-2">2. Credit Profile</h4>
                     <div>
-                        <label class="text-xs font-bold uppercase text-slate-400 tracking-widest block mb-4">Current Credit Score Range</label>
+                        <label class="text-xs font-bold uppercase text-slate-400 tracking-widest block mb-4">Current Estimated Credit Score</label>
                         <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
-                            <label class="flex items-center gap-2 cursor-pointer border rounded-lg p-3 hover:bg-slate-50"><input type="radio" name="score_range" value="Below 500" required><span class="text-xs font-bold uppercase">Below 500</span></label>
-                            <label class="flex items-center gap-2 cursor-pointer border rounded-lg p-3 hover:bg-slate-50"><input type="radio" name="score_range" value="500-599"><span class="text-xs font-bold uppercase">500-599</span></label>
-                            <label class="flex items-center gap-2 cursor-pointer border rounded-lg p-3 hover:bg-slate-50"><input type="radio" name="score_range" value="600-699"><span class="text-xs font-bold uppercase">600-699</span></label>
-                            <label class="flex items-center gap-2 cursor-pointer border rounded-lg p-3 hover:bg-slate-50"><input type="radio" name="score_range" value="700+"><span class="text-xs font-bold uppercase">700+</span></label>
-                            <label class="flex items-center gap-2 cursor-pointer border rounded-lg p-3 hover:bg-slate-50"><input type="radio" name="score_range" value="Not sure"><span class="text-xs font-bold uppercase">Not sure</span></label>
+                            <label class="flex items-center gap-2 cursor-pointer border rounded-lg p-3 hover:bg-slate-50"><input type="radio" name="Score Range" value="Below 500" required><span class="text-xs font-bold">Below 500</span></label>
+                            <label class="flex items-center gap-2 cursor-pointer border rounded-lg p-3 hover:bg-slate-50"><input type="radio" name="Score Range" value="500-599"><span class="text-xs font-bold">500-599</span></label>
+                            <label class="flex items-center gap-2 cursor-pointer border rounded-lg p-3 hover:bg-slate-50"><input type="radio" name="Score Range" value="600-699"><span class="text-xs font-bold">600-699</span></label>
+                            <label class="flex items-center gap-2 cursor-pointer border rounded-lg p-3 hover:bg-slate-50"><input type="radio" name="Score Range" value="700+"><span class="text-xs font-bold">700+</span></label>
+                            <label class="flex items-center gap-2 cursor-pointer border rounded-lg p-3 hover:bg-slate-50"><input type="radio" name="Score Range" value="Not sure"><span class="text-xs font-bold">Not sure</span></label>
                         </div>
                     </div>
                     <div>
                         <label class="text-[10px] font-black text-slate-400 uppercase tracking-widest block mb-2">Most pressing credit challenge right now?</label>
-                        <textarea name="challenge" id="challenge" rows="2" required minlength="10" placeholder="e.g. Identity theft, medical bills, collections..." class="input-friendly text-lg italic"></textarea>
+                        <textarea name="Main Challenge" rows="2" required minlength="10" placeholder="Identity theft, medical bills, collections, etc." class="input-friendly text-lg italic"></textarea>
                     </div>
                 </div>
 
                 <div class="space-y-8">
-                    <h4 class="text-landmarkBlue font-black uppercase text-sm tracking-widest border-b pb-2">Readiness & Goals</h4>
+                    <h4 class="text-landmarkBlue font-black uppercase text-sm tracking-widest border-b pb-2">3. Commitment & Goals</h4>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div>
-                            <label class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2 block">Legal action ready?</label>
-                            <select name="legal_ready" required class="w-full bg-slate-50 p-4 rounded-xl font-bold border-none outline-none"><option value="">Please Select</option><option>Yes</option><option>No</option><option>Not sure</option></select>
+                            <label class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2 block">Legal action ready if needed?</label>
+                            <select name="Legal Action Ready" required class="w-full bg-slate-50 p-4 rounded-xl font-bold border-none outline-none">
+                                <option value="">Please Select</option><option>Yes</option><option>No</option><option>Not sure</option>
+                            </select>
                         </div>
                         <div>
-                            <label class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2 block">Investment Capacity</label>
-                            <select name="investment" required class="w-full bg-slate-50 p-4 rounded-xl font-bold border-none outline-none"><option value="">Please Select</option><option>$1000</option><option>$500</option><option>$200 or less</option></select>
+                            <label class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2 block">Investment Capability</label>
+                            <select name="Investment Level" required class="w-full bg-slate-50 p-4 rounded-xl font-bold border-none outline-none">
+                                <option value="">Please Select</option><option>$1000</option><option>$500</option><option>$200 or less</option>
+                            </select>
                         </div>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div>
                             <label class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2 block">Improvement Timeline</label>
-                            <select name="timeline" required class="w-full bg-slate-50 p-4 rounded-xl font-bold border-none outline-none"><option value="">Please Select</option><option>ASAP</option><option>30 days</option><option>1-3 months</option><option>3+ months</option></select>
+                            <select name="Timeline" required class="w-full bg-slate-50 p-4 rounded-xl font-bold border-none outline-none">
+                                <option value="">Please Select</option><option>ASAP</option><option>Within 30 days</option><option>1-3 months</option><option>3+ months</option>
+                            </select>
                         </div>
                         <div>
-                            <label class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2 block">Main motivation?</label>
-                            <input type="text" name="main_reason" required minlength="5" placeholder="Buying a home, car, etc." class="input-friendly text-lg">
+                            <label class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2 block">Main reason for improving now?</label>
+                            <input type="text" name="Primary Motivation" required minlength="5" placeholder="Buying a home, car, etc." class="input-friendly text-lg">
                         </div>
                     </div>
                 </div>
@@ -217,21 +246,56 @@
         </div>
     </section>
 
+    <section id="about" class="py-24 px-6 max-w-6xl mx-auto flex flex-col md:flex-row gap-16 items-center">
+        <div class="md:w-1/3 text-center">
+            <img src="https://raw.githubusercontent.com/verbatim37/landmarkcredit/main/assets/headshot.jpg" alt="Brad Young" class="rounded-[40px] shadow-xl border-4 border-landmarkGold mx-auto w-full max-w-[350px]">
+        </div>
+        <div class="md:w-2/3">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-landmarkBlue uppercase mb-4 tracking-tighter">Bradley Young</h2>
+            <p class="text-landmarkGold font-black uppercase text-sm mb-8 tracking-[0.3em] italic">CEO & Founder since 2000</p>
+            <p class="text-xl md:text-2xl text-slate-700 leading-relaxed italic mb-8 border-l-4 border-landmarkGold pl-8 font-medium">"We treat every customer as family with Love, Respect and Patience."</p>
+            <p class="text-lg text-slate-500 leading-relaxed">Brad founded Landmark to offer a higher standard of advocacy and restore financial security through legal consumer protection strategies.</p>
+        </div>
+    </section>
+
+    <section id="faq" class="py-24 px-6 bg-slate-50 border-y border-slate-200 text-center">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-5xl font-extrabold mb-20 uppercase text-darkNavy tracking-tighter">FAQ</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-10 rounded-[40px] shadow-md border border-slate-100">
+                    <h4 class="font-black text-landmarkBlue mb-6 uppercase text-xs">Is it Free?</h4>
+                    <p class="text-xs text-slate-500 italic">First strategy call is 100% free and no obligation.</p>
+                </div>
+                <div class="bg-white p-10 rounded-[40px] shadow-md border border-slate-100">
+                    <h4 class="font-black text-landmarkBlue mb-6 uppercase text-xs">Timeline?</h4>
+                    <p class="text-xs text-slate-500 italic">Harassment stop fast. Restoration moves fast through our process.</p>
+                </div>
+                <div class="bg-white p-10 rounded-[40px] shadow-md border border-slate-100">
+                    <h4 class="font-black text-landmarkBlue mb-6 uppercase text-xs">Is this Legal?</h4>
+                    <p class="text-xs text-slate-500 italic">Yes! We use federal laws to force bureau compliance.</p>
+                </div>
+                <div class="bg-white p-10 rounded-[40px] shadow-md border border-slate-100">
+                    <h4 class="font-black text-landmarkBlue mb-6 uppercase text-xs">Hurt Credit?</h4>
+                    <p class="text-xs text-slate-500 italic">No. Our mission is pure restoration through consumer law.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="bg-black py-20 px-6 text-slate-400 border-t-[10px] border-landmarkGold">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
             <div>
                 <h4 class="font-black text-white mb-8 uppercase text-lg tracking-[0.3em] underline decoration-landmarkGold decoration-4 underline-offset-[12px]">Accreditation</h4>
                 <a href="https://www.bbb.org/us/tx/tyler/profile/credit-repair-no-advanced-fee/landmark-credit-repair-1075-28036223/#sealclick" target="_blank" rel="nofollow">
-                    <img decoding="async" src="https://seal-easttexas.bbb.org/seals/blue-seal-200-42-whitetxt-bbb-28036223.png" alt="BBB" class="h-16 grayscale hover:grayscale-0 transition-all">
+                    <img decoding="async" src="https://seal-easttexas.bbb.org/seals/blue-seal-200-42-whitetxt-bbb-28036223.png" alt="BBB" class="h-20 grayscale hover:grayscale-0 transition-all">
                 </a>
-                <p class="mt-8 font-black text-landmarkBlue uppercase tracking-tighter text-xl">Landmark Credit Repair</p>
             </div>
             <div class="text-[10px] md:text-xs uppercase font-black leading-relaxed space-y-8">
                 <p class="text-white underline tracking-[0.4em] font-black uppercase">FCRA COMPLIANCE & LEGAL NOTICE</p>
-                <p class="font-normal normal-case text-slate-500 italic text-base leading-relaxed">
-                    Landmark Credit Repair operates under the Fair Credit Reporting Act (FCRA) and Fair Debt Collection Practices Act (FDCPA). No prior results guarantee future success.
+                <p class="font-normal normal-case text-slate-500 italic text-base italic leading-relaxed">
+                    Landmark Credit Repair operates under the Fair Credit Reporting Act (FCRA) and Fair Debt Collection Practices Act (FDCPA). Any and all claims or representations as to results are not to be considered as "average results".
                 </p>
-                <p class="text-landmarkGold tracking-[0.4em] border-t border-slate-900 pt-8 uppercase">© 2026 LANDMARK CREDIT REPAIR. ALL RIGHTS RESERVED.</p>
+                <p class="text-landmarkGold tracking-[0.4em] border-t border-slate-800 pt-8">© 2026 LANDMARK CREDIT REPAIR. ALL RIGHTS RESERVED.</p>
             </div>
         </div>
     </footer>
@@ -242,18 +306,12 @@
         const formStatus = document.getElementById('formStatus');
 
         form.onsubmit = function() {
-            // Check HTML5 validity
-            if (!form.checkValidity()) {
-                return false;
-            }
-
-            // UI Feedback
+            if (!form.checkValidity()) return false;
             submitBtn.disabled = true;
             submitBtn.innerText = "SENDING REQUEST...";
             submitBtn.classList.add('opacity-50');
-            formStatus.innerText = "Please wait while we secure your data...";
+            formStatus.innerText = "Securing your data, please wait...";
             formStatus.className = "mt-4 text-sm font-bold text-landmarkBlue";
-            
             return true;
         };
     </script>
