@@ -196,7 +196,7 @@
                 <p class="text-lg font-black uppercase tracking-[0.1em] italic">100% Confidential • Secure • Expert Consultation</p>
             </div>
 
-            <form id="landmarkForm" action="https://formspree.io/f/mvzwzgwk" method="POST" class="p-8 md:p-16 space-y-12">
+            <form id="landmarkForm" action="https://formspree.io/f/xpqylqze" method="POST" class="p-8 md:p-16 space-y-12">
                 <div class="space-y-8">
                     <h4 class="text-landmarkBlue font-black uppercase text-sm tracking-widest border-b pb-2">1. Contact Information</h4>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -311,19 +311,14 @@
         const formStatus = document.getElementById('formStatus');
 
         form.onsubmit = function() {
-            // Validate form
             if (!form.checkValidity()) {
                 return true; 
             }
-
-            // UI feedback
             submitBtn.disabled = true;
             submitBtn.innerText = "SENDING REQUEST...";
             submitBtn.classList.add('opacity-50');
             formStatus.innerText = "Securing your data, please wait...";
             formStatus.className = "mt-4 text-sm font-bold text-landmarkBlue text-center";
-            
-            // Allow native form POST to Formspree
             return true;
         };
     </script>
