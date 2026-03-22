@@ -108,8 +108,8 @@
         </div>
     </header>
 
-    <section class="py-16 px-6 bg-slate-50 border-b border-slate-200">
-        <div class="max-w-4xl mx-auto text-center">
+    <section class="py-16 px-6 bg-slate-50 border-b border-slate-200 text-center">
+        <div class="max-w-4xl mx-auto">
             <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-200">
                 <div class="bg-red-600 px-6 py-2 flex items-center justify-between">
                     <span class="text-[10px] font-black text-white uppercase tracking-[0.3em]">Official Consumer Alert</span>
@@ -283,10 +283,53 @@
                 <p class="font-normal normal-case text-slate-500 italic text-base leading-relaxed opacity-80">
                     Notice: Landmark Credit Repair operates under the Fair Credit Reporting Act (FCRA) and Fair Debt Collection Practices Act (FDCPA). Results are not to be considered as "average results".
                 </p>
-                <p class="text-landmarkGold tracking-[0.4em] border-t border-slate-900 pt-8 uppercase font-bold">© 2026 LANDMARK CREDIT REPAIR. ALL RIGHTS RESERVED.</p>
+                <div class="pt-6 border-t border-slate-800 space-y-4">
+                    <div class="flex flex-wrap gap-4 text-[10px] font-black uppercase tracking-widest text-landmarkGold">
+                        <button onclick="togglePrivacyModal()" class="hover:text-white underline transition-colors">Privacy Policy</button>
+                        <button onclick="togglePrivacyModal()" class="hover:text-white underline transition-colors">SMS Terms & Conditions</button>
+                    </div>
+                    <p class="text-landmarkGold tracking-[0.4em] uppercase font-bold">© 2026 LANDMARK CREDIT REPAIR. ALL RIGHTS RESERVED.</p>
+                </div>
             </div>
         </div>
     </footer>
+
+    <!-- RingCentral Compliance Modal -->
+    <div id="privacyModal" class="fixed inset-0 z-[100] hidden overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div class="fixed inset-0 bg-slate-900 bg-opacity-95 backdrop-blur-lg" onclick="togglePrivacyModal()"></div>
+        <div class="flex min-h-full items-center justify-center p-6">
+            <div class="relative bg-white rounded-[40px] shadow-2xl w-full max-w-3xl border-t-[12px] border-landmarkBlue p-8 md:p-12">
+                <div class="max-h-[70vh] overflow-y-auto pr-4 space-y-8 text-slate-700">
+                    <div>
+                        <h2 class="text-2xl font-black text-darkNavy uppercase mb-4 tracking-tight">Privacy Policy</h2>
+                        <p class="mb-4">At Landmark Credit Repair, we value your privacy. We collect personal information such as your name, email address, phone number, and credit profile details to provide professional credit advocacy services.</p>
+                        <h3 class="font-bold uppercase text-sm text-landmarkBlue mb-2">How Information is Used</h3>
+                        <p class="mb-4">This information is used solely for the purpose of credit consultation, account notifications, and appointment reminders.</p>
+                        <h3 class="font-bold uppercase text-sm text-landmarkBlue mb-2">Data Sharing</h3>
+                        <p class="mb-4">We do not share your personal information with third parties or affiliates for marketing purposes. <strong>SMS consent is not shared with third parties.</strong></p>
+                    </div>
+
+                    <hr class="border-slate-100">
+
+                    <div>
+                        <h2 class="text-2xl font-black text-darkNavy uppercase mb-4 tracking-tight">SMS Terms & Conditions</h2>
+                        <p class="mb-4">By providing your phone number and submitting our web forms, you consent to receive SMS messages from Landmark Credit Repair. SMS consent is obtained verbally during consultations or through our online web forms.</p>
+                        <ul class="list-disc pl-5 space-y-2 mb-4 text-sm">
+                            <li><strong>Message Types:</strong> You can expect to receive appointment reminders, credit update alerts, and account notifications.</li>
+                            <li><strong>Frequency:</strong> Messaging frequency may vary.</li>
+                            <li><strong>Costs:</strong> Message and data rates may apply.</li>
+                            <li><strong>Opt-Out:</strong> To opt out at any time, text <strong>STOP</strong> to our messaging number.</li>
+                            <li><strong>Support:</strong> For assistance, text <strong>HELP</strong> or visit our website.</li>
+                        </ul>
+                        <p class="text-[10px] text-slate-400 italic">Messaging provided by RingCentral.</p>
+                    </div>
+                </div>
+                <div class="mt-10 text-center">
+                    <button onclick="togglePrivacyModal()" class="btn-main px-12 py-3 text-sm font-black">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script type="application/ld+json">
     {
@@ -306,6 +349,12 @@
     </script>
 
     <script>
+        function togglePrivacyModal() {
+            const modal = document.getElementById('privacyModal');
+            modal.classList.toggle('hidden');
+            document.body.style.overflow = modal.classList.contains('hidden') ? 'auto' : 'hidden';
+        }
+
         const form = document.getElementById('landmarkForm');
         const submitBtn = document.getElementById('submitBtn');
         const formStatus = document.getElementById('formStatus');
