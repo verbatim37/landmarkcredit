@@ -196,6 +196,7 @@
                 <p class="text-lg font-black uppercase tracking-[0.1em] italic">100% Confidential • Secure • Expert Consultation</p>
             </div>
 
+            <!-- ALL FIELDS BELOW ARE NOW STRICTLY REQUIRED -->
             <form id="landmarkForm" action="https://formspree.io/f/xpqylqze" method="POST" class="p-8 md:p-16 space-y-12">
                 <div class="space-y-8">
                     <h4 class="text-landmarkBlue font-black uppercase text-sm tracking-widest border-b pb-2">1. Contact Information</h4>
@@ -214,10 +215,10 @@
                     <label class="text-xs font-bold uppercase text-slate-400 tracking-widest block">Score Range</label>
                     <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
                         <label class="flex items-center gap-2 cursor-pointer border rounded-lg p-3 hover:bg-slate-50"><input type="radio" name="Score Range" value="Below 500" required><span class="text-xs font-bold">Below 500</span></label>
-                        <label class="flex items-center gap-2 cursor-pointer border rounded-lg p-3 hover:bg-slate-50"><input type="radio" name="Score Range" value="500-599"><span class="text-xs font-bold">500-599</span></label>
-                        <label class="flex items-center gap-2 cursor-pointer border rounded-lg p-3 hover:bg-slate-50"><input type="radio" name="Score Range" value="600-699"><span class="text-xs font-bold">600-699</span></label>
-                        <label class="flex items-center gap-2 cursor-pointer border rounded-lg p-3 hover:bg-slate-50"><input type="radio" name="Score Range" value="700+"><span class="text-xs font-bold">700+</span></label>
-                        <label class="flex items-center gap-2 cursor-pointer border rounded-lg p-3 hover:bg-slate-50"><input type="radio" name="Score Range" value="Not sure"><span class="text-xs font-bold">Not sure</span></label>
+                        <label class="flex items-center gap-2 cursor-pointer border rounded-lg p-3 hover:bg-slate-50"><input type="radio" name="Score Range" value="500-599" required><span class="text-xs font-bold">500-599</span></label>
+                        <label class="flex items-center gap-2 cursor-pointer border rounded-lg p-3 hover:bg-slate-50"><input type="radio" name="Score Range" value="600-699" required><span class="text-xs font-bold">600-699</span></label>
+                        <label class="flex items-center gap-2 cursor-pointer border rounded-lg p-3 hover:bg-slate-50"><input type="radio" name="Score Range" value="700+" required><span class="text-xs font-bold">700+</span></label>
+                        <label class="flex items-center gap-2 cursor-pointer border rounded-lg p-3 hover:bg-slate-50"><input type="radio" name="Score Range" value="Not sure" required><span class="text-xs font-bold">Not sure</span></label>
                     </div>
                     <textarea name="Main Challenge" rows="2" placeholder="Most pressing credit challenge?" required minlength="10" class="input-friendly text-lg"></textarea>
                 </div>
@@ -225,13 +226,13 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                     <div class="space-y-6">
                         <label class="text-xs font-bold uppercase text-slate-400 tracking-widest block">Ready for legal action?</label>
-                        <select name="Legal Action" required class="w-full bg-slate-50 p-4 rounded-xl font-bold border-none outline-none"><option value="">Select</option><option>Yes</option><option>No</option><option>Not sure</option></select>
+                        <select name="Legal Action" required class="w-full bg-slate-50 p-4 rounded-xl font-bold border-none outline-none"><option value="">Select (Required)</option><option>Yes</option><option>No</option><option>Not sure</option></select>
                         <label class="text-xs font-bold uppercase text-slate-400 tracking-widest block pt-4">Timeline</label>
-                        <select name="Timeline" required class="w-full bg-slate-50 p-4 rounded-xl font-bold border-none outline-none"><option value="">Select</option><option>ASAP</option><option>30 days</option><option>1-3 months</option></select>
+                        <select name="Timeline" required class="w-full bg-slate-50 p-4 rounded-xl font-bold border-none outline-none"><option value="">Select (Required)</option><option>ASAP</option><option>30 days</option><option>1-3 months</option></select>
                     </div>
                     <div class="space-y-6">
                         <label class="text-xs font-bold uppercase text-slate-400 tracking-widest block">Investment Capacity</label>
-                        <select name="Investment" required class="w-full bg-slate-50 p-4 rounded-xl font-bold border-none outline-none"><option value="">Select</option><option>$1000</option><option>$500</option><option>$200 or less</option></select>
+                        <select name="Investment" required class="w-full bg-slate-50 p-4 rounded-xl font-bold border-none outline-none"><option value="">Select (Required)</option><option>$1000</option><option>$500</option><option>$200 or less</option></select>
                         <label class="text-xs font-bold uppercase text-slate-400 tracking-widest block pt-4">Motivation</label>
                         <input type="text" name="Motivation" placeholder="Buying home, car, etc." required minlength="5" class="input-friendly text-lg">
                     </div>
@@ -360,14 +361,19 @@
         const formStatus = document.getElementById('formStatus');
 
         form.onsubmit = function() {
+            // Check if form is valid before triggering UI changes
             if (!form.checkValidity()) {
                 return true; 
             }
+
+            // Disable button and show sending status
             submitBtn.disabled = true;
             submitBtn.innerText = "SENDING REQUEST...";
             submitBtn.classList.add('opacity-50');
             formStatus.innerText = "Securing your data, please wait...";
             formStatus.className = "mt-4 text-sm font-bold text-landmarkBlue text-center";
+            
+            // Proceed with submission
             return true;
         };
     </script>
