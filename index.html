@@ -115,7 +115,7 @@
                     <span class="text-[10px] font-black text-white uppercase tracking-[0.3em]">Official Consumer Alert</span>
                     <span class="text-[10px] font-black text-white/80 uppercase tracking-widest italic font-bold">Jan 7, 2026 Update</span>
                 </div>
-                <div class="p-8 md:p-12 space-y-6">
+                <div class="p-8 md:p-12 space-y-6 text-left md:text-center">
                     <p class="text-lg md:text-xl text-slate-700 leading-relaxed font-medium">
                         Over the last 20 years, we have come to realize that <strong>just sending out dispute letters isn’t going to get the job done!</strong>
                     </p>
@@ -132,8 +132,8 @@
         </div>
     </section>
 
-    <section class="py-12 bg-white border-b border-slate-100">
-        <div class="max-w-7xl mx-auto px-6 text-center text-[10px] font-black uppercase text-slate-400 tracking-[0.4em] mb-10 italic">As Featured On The Radio</div>
+    <section class="py-12 bg-white border-b border-slate-100 text-center">
+        <div class="max-w-7xl mx-auto px-6 text-[10px] font-black uppercase text-slate-400 tracking-[0.4em] mb-10 italic">As Featured On The Radio</div>
         <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-8 items-center opacity-40 grayscale">
             <img src="https://raw.githubusercontent.com/verbatim37/landmarkcredit/main/assets/news_organizations%20(1).png" alt="Radio Appearance" class="h-8 mx-auto object-contain">
             <img src="https://raw.githubusercontent.com/verbatim37/landmarkcredit/main/assets/news_organizations%20(2).png" alt="Radio Appearance" class="h-8 mx-auto object-contain">
@@ -263,7 +263,7 @@
                     <div class="flex gap-4 items-start bg-slate-50 p-6 rounded-2xl border border-slate-100">
                         <input type="checkbox" name="SMS Consent" id="sms_consent" required class="mt-1 w-5 h-5 accent-landmarkBlue cursor-pointer">
                         <label for="sms_consent" class="text-[11px] leading-relaxed text-slate-500 font-medium">
-                            By checking this box, I consent to receive SMS messages from **Landmark Credit Services** related to appointment reminders, follow-up messages, and billing inquiries at the phone number provided above. The SMS frequency may vary. Data rates may apply. For assistance, reply HELP. Reply STOP to opt out of receiving text messages. Please review our <a href="#privacy-policy" onclick="togglePrivacyModal(); return false;" class="text-landmarkBlue underline font-bold">Privacy Policy and Terms & Conditions</a>.
+                            By checking this box, I consent to receive SMS messages from **Landmark Credit Services** related to appointment reminders, follow-up messages, and billing inquiries at the phone number provided above. The SMS frequency may vary. Data rates may apply. For assistance, reply HELP. Reply STOP to opt out of receiving text messages. Please review our <a href="legal.html" target="_blank" class="text-landmarkBlue underline font-bold">Privacy Policy and Terms & Conditions</a>.
                         </label>
                     </div>
 
@@ -320,49 +320,14 @@
                 </p>
                 <div class="pt-6 border-t border-slate-800 space-y-4">
                     <div class="flex flex-wrap gap-4 text-[10px] font-black uppercase tracking-widest text-landmarkGold">
-                        <a href="#privacy-policy" onclick="togglePrivacyModal(); return false;" class="hover:text-white underline transition-colors">Privacy Policy</a>
-                        <a href="#terms-conditions" onclick="togglePrivacyModal(); return false;" class="hover:text-white underline transition-colors">SMS Terms & Conditions</a>
+                        <a href="legal.html#privacy-policy" class="hover:text-white underline transition-colors">Privacy Policy</a>
+                        <a href="legal.html#terms-conditions" class="hover:text-white underline transition-colors">SMS Terms & Conditions</a>
                     </div>
                     <p class="text-landmarkGold tracking-[0.4em] uppercase font-bold">© 2026 LANDMARK CREDIT REPAIR. ALL RIGHTS RESERVED.</p>
                 </div>
             </div>
         </div>
     </footer>
-
-    <div id="privacyModal" class="fixed inset-0 z-[100] hidden overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-        <div class="fixed inset-0 bg-slate-900 bg-opacity-95 backdrop-blur-lg" onclick="togglePrivacyModal()"></div>
-        <div class="flex min-h-full items-center justify-center p-6">
-            <div class="relative bg-white rounded-[40px] shadow-2xl w-full max-w-3xl border-t-[12px] border-landmarkBlue p-8 md:p-12">
-                <div class="max-h-[70vh] overflow-y-auto pr-4 space-y-8 text-slate-700 text-left">
-                    <div>
-                        <h2 class="text-2xl font-black text-darkNavy uppercase mb-4 tracking-tight">Privacy Policy</h2>
-                        <p class="mb-4">At Landmark Credit Repair, we collect personal information such as name, email, phone, and credit details to provide professional credit advocacy.</p>
-                        <h3 class="font-bold uppercase text-xs text-landmarkBlue mb-2">Data Protection</h3>
-                        <p class="mb-4">The information (Phone Numbers) obtained as part of the SMS consent process will not be shared with third parties or affiliates for marketing purposes. **SMS consent is not shared with third parties.**</p>
-                    </div>
-
-                    <hr class="border-slate-100">
-
-                    <div>
-                        <h2 class="text-2xl font-black text-darkNavy uppercase mb-4 tracking-tight">SMS Terms & Conditions</h2>
-                        <div class="space-y-6 text-sm">
-                            <p><strong>1- SMS Consent Communication:</strong> Phone numbers obtained via SMS consent are not shared with third parties for marketing purposes.</p>
-                            <p><strong>2- Types of SMS Communications:</strong> By consenting, you may receive messages related to: Appointment reminders, Follow-up messages, and Billing inquiries.</p>
-                            <p><strong>3- Message Frequency:</strong> Message frequency may vary depending on the type of communication. You may receive up to 5 SMS messages per week related to your appointments or billing.</p>
-                            <p><strong>4- Potential Fees:</strong> Standard message and data rates may apply depending on your carrier’s pricing plan.</p>
-                            <p><strong>5- Opt-In Method:</strong> You may opt-in verbally during a conversation or by submitting our online form.</p>
-                            <p><strong>6- Opt-Out Method:</strong> Reply <strong>STOP</strong> at any time to opt out. Alternatively, contact us directly for removal.</p>
-                            <p><strong>7- Help:</strong> Reply <strong>HELP</strong> for assistance or contact us via our website.</p>
-                            <p><strong>8- Standard Disclosures:</strong> Message and data rates may apply. Opt out at any time via "STOP." Messaging frequency may vary.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-10 text-center">
-                    <button onclick="togglePrivacyModal()" class="btn-main px-12 py-3 text-sm font-black">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <script type="application/ld+json">
     {
@@ -382,20 +347,6 @@
     </script>
 
     <script>
-        // Trigger Modal if URL contains the hash
-        window.addEventListener('load', () => {
-            const hash = window.location.hash;
-            if (hash === '#privacy-policy' || hash === '#terms-conditions') {
-                togglePrivacyModal();
-            }
-        });
-
-        function togglePrivacyModal() {
-            const modal = document.getElementById('privacyModal');
-            modal.classList.toggle('hidden');
-            document.body.style.overflow = modal.classList.contains('hidden') ? 'auto' : 'hidden';
-        }
-
         const form = document.getElementById('landmarkForm');
         const submitBtn = document.getElementById('submitBtn');
         const formStatus = document.getElementById('formStatus');
